@@ -1,0 +1,45 @@
+
+=== Testing simple_counter ===
+Prompt: Create a simple counter blueprint in Scrypto that can increment and get the current count
+Got response (first 100 chars): Here's a simple counter blueprint in Scrypto:
+
+```rust
+use scrypto::prelude::*;
+
+#[blueprint]
+mod si...
+Extracted 600 characters of code
+Created project in output/simple_counter
+Testing compilation...
+✅ Compilation successful!
+Test command: cargo build
+
+=== Testing admin_nft ===
+Prompt: Create an admin-controlled NFT blueprint in Scrypto where only admin can mint NFTs
+Got response (first 100 chars): Here's a simple admin-controlled NFT blueprint in Scrypto:
+
+```rust
+use scrypto::prelude::*;
+
+#[deri...
+Extracted 2046 characters of code
+Created project in output/admin_nft
+Testing compilation...
+❌ Compilation failed, attempting retry...
+Error:     Updating git repository `https://github.com/radixdlt/radixdlt-scrypto`
+    Updating git repository `https://github.com/radixdlt/const-sha1`
+    Updating crates.io index
+    Updating git repository...
+❌ Compilation failed
+Error:     Updating git repository `https://github.com/radixdlt/radixdlt-scrypto`
+    Updating git repository `https://github.com/radixdlt/const-sha1`
+    Updating crates.io index
+    Updating git repository `https://github.com/dtolnay/syn.git`
+    Updating git repository `https://github.com/radixdlt/wasm-...
+
+=== Results Summary ===
+simple_counter: ✅ PASS (retries: 0)
+admin_nft: ❌ FAIL (retries: 1)
+
+Results saved to results.json
+Successful blueprints: 1/2
